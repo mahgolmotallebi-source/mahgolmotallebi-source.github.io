@@ -1,6 +1,6 @@
 /* =====================================================================
-   Mahgol Motalebi — Portfolio
-   System: B × C  — engineered grid (mono labels, index numbers, data rows)
+   Mahgol Motalebi â€” Portfolio
+   System: B Ã— C  â€” engineered grid (mono labels, index numbers, data rows)
    carrying editorial warmth (Instrument Serif, warm paper, coral accent)
    ===================================================================== */
 
@@ -130,7 +130,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
 .sec-sub { font-family: var(--grotesk); color: var(--ink-2); font-size: 17px; max-width: 540px; }
 
 /* =====================================================================
-   HERO  (00) — single screen, driven by the diagonal of the concrete
+   HERO  (00) â€” single screen, driven by the diagonal of the concrete
    ===================================================================== */
 .hero { position: relative; }
 .hero-stage {
@@ -202,7 +202,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
   background: var(--coral); align-self: center; flex: 0 0 auto;
 }
 
-/* home · hero CTAs — bordered blocks with coral hover-fill + arrow nudge */
+/* home Â· hero CTAs â€” bordered blocks with coral hover-fill + arrow nudge */
 .home-cta {
   display: inline-flex; align-items: center; gap: 8px;
   font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.12em;
@@ -228,7 +228,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
 .home-cta--primary .ar { color: #fff; }
 .home-cta--primary:hover .ar { transform: translateX(4px); }
 
-/* home · hero CTA pills — warm, horizontal */
+/* home Â· hero CTA pills â€” warm, horizontal */
 .hero-link {
   display: inline-flex; align-items: center; gap: 7px;
   font-family: var(--grotesk); font-size: 12px; font-weight: 500;
@@ -240,7 +240,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
 }
 .hero-link:active { transform: scale(0.97); }
 
-/* Primary — filled paper */
+/* Primary â€” filled paper */
 .hero-link--primary {
   background: var(--paper); color: var(--ink); border-color: var(--paper);
 }
@@ -248,7 +248,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
 .hero-link--primary:hover { background: var(--line); border-color: var(--line); }
 .hero-link--primary:hover .ar { transform: translateX(4px); }
 
-/* Secondary — ink outline */
+/* Secondary â€” ink outline */
 .hero-link--secondary {
   background: transparent; color: var(--ink); border-color: var(--ink);
 }
@@ -256,7 +256,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
 .hero-link--secondary:hover { background: var(--ink); color: var(--paper); }
 .hero-link--secondary:hover .ar { color: var(--paper); transform: translateY(3px); }
 
-/* Ghost — soft tinted */
+/* Ghost â€” soft tinted */
 .hero-link--ghost {
   background: var(--paper-2); color: var(--ink-2); border-color: var(--line);
 }
@@ -264,7 +264,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
 .hero-link--ghost:hover { background: var(--line); color: var(--ink); }
 .hero-link--ghost:hover .ar { transform: translate(3px, -3px); }
 
-/* home · lower band — proof gets room, then beliefs.
+/* home Â· lower band â€” proof gets room, then beliefs.
    The content column starts at the photo's left edge (42vw) so the text sits
    directly under the image above it. */
 .home-lower { padding-top: 88px; padding-bottom: 20px; }
@@ -311,7 +311,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
   color: var(--coral);
 }
 
-/* home · beliefs — manifesto grid */
+/* home Â· beliefs â€” manifesto grid */
 .beliefs-kicker {
   font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.18em;
   text-transform: uppercase; color: var(--coral);
@@ -397,7 +397,7 @@ section { position: relative; scroll-margin-top: var(--nav-h); }
 .beyond-intro { display: flex; flex-direction: column; gap: 32px; padding: 24px 0 56px; }
 .beyond-intro p { font-family: var(--grotesk); font-size: clamp(16px, 1.5vw, 18px); font-weight: 400; line-height: 1.6; letter-spacing: -0.01em; color: var(--ink-2); margin: 0; max-width: 100%; text-wrap: pretty; }
 
-/* meta presented as a compact card panel — mirrors .meta from project cards */
+/* meta presented as a compact card panel â€” mirrors .meta from project cards */
 .beyond-meta { margin: 0; display: block; padding: 0; border-top: none; }
 .bm-row { display: grid; grid-template-columns: 170px 1fr; gap: 40px; align-items: baseline; padding: 7px 0; border-bottom: none; }
 .bm-row dt { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mut); padding-top: 2px; }
