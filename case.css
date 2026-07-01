@@ -129,7 +129,8 @@ body.case-open .case-view.is-open { display: block; }
 /* ---- figures ---- */
 .cs-fig { margin: 0; }
 .cs-fig .frame {
-  border: 1px solid var(--line-2);
+  border: none;
+  background: none !important;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
 }
@@ -149,7 +150,7 @@ body.case-open .case-view.is-open { display: block; }
 .cs-figrow--match { align-items: stretch; }
 .cs-figrow--match .cs-fig { display: flex; flex-direction: column; }
 .cs-figrow--match .cs-fig .frame {
-  aspect-ratio: 1 / 1; background: #faf6ef;
+  aspect-ratio: 1 / 1; background: none;
 }
 .cs-figrow--match .cs-fig img { width: 100%; height: 100%; object-fit: contain; }
 /* exercise -> outcome flow: images recolored to the site paper so they blend
@@ -182,11 +183,11 @@ body.case-open .case-view.is-open { display: block; }
 .proto-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; max-width: 64%; margin-inline: auto; }
 .proto-layout .proto-portrait { display: flex; flex-direction: column; }
 .proto-dashboard { width: 86%; margin-inline: auto; }
-.proto-dashboard .frame { background: #f6f7f9; }
+.proto-dashboard .frame { background: none; }
 .proto-layout .proto-portrait .frame { flex: 1 1 auto; min-height: 0; }
 .proto-layout .proto-portrait img { width: 100%; height: 100%; object-fit: cover; }
 .proto-stack { display: flex; flex-direction: column; gap: 22px; }
-.proto-stack .cs-fig .frame { background: #f6f7f9; }
+.proto-stack .cs-fig .frame { background: none; }
 .proto-stack .cs-fig img { width: 100%; height: auto; display: block; }
 @media (max-width: 760px) { .proto-layout { grid-template-columns: 1fr; max-width: 100%; } }
 /* mini row: small centered thumbnails */
@@ -199,9 +200,9 @@ body.case-open .case-view.is-open { display: block; }
 .cs-figrow--pair { grid-template-columns: 1fr 1fr; align-items: end; gap: 24px; max-width: 580px; margin-inline: auto; }
 /* enlarged centered figure that actually grows inside the flex column */
 .cs-fig--grow { width: min(580px, 100%); align-self: center; margin-inline: auto; }
-.cs-fig--grow .frame { background: #faf6ef; }
+.cs-fig--grow .frame { background: none; }
 /* selected concept highlight */
-.cs-fig--selected .frame { border: 2px solid var(--coral); position: relative; }
+.cs-fig--selected .frame { border: none; position: relative; }
 .cs-fig--selected .sel-tag {
   position: absolute; top: 10px; left: 10px; z-index: 2;
   font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.1em;
@@ -217,7 +218,7 @@ body.case-open .case-view.is-open { display: block; }
 /* uniform, aligned chart grid — every cell identical 16:9, image contained */
 .cs-figrow--chart { align-items: stretch; }
 .cs-figrow--chart .cs-fig { display: flex; flex-direction: column; }
-.cs-figrow--chart .cs-fig .frame { aspect-ratio: 16 / 9; background: #fbfcfd; }
+.cs-figrow--chart .cs-fig .frame { aspect-ratio: 16 / 9; background: none; }
 .cs-figrow--chart .cs-fig img { width: 100%; height: 100%; object-fit: contain; }
 /* four-up archetype grid */
 .cs-arche { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
