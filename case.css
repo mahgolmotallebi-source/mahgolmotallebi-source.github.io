@@ -1,6 +1,6 @@
 /* =====================================================================
-   CASE STUDY VIEW — Smart Surface (Project 01)
-   In-page detail view, portfolio language: paper · Anton · coral · mono
+   CASE STUDY VIEW â€” Smart Surface (Project 01)
+   In-page detail view, portfolio language: paper Â· Anton Â· coral Â· mono
    ===================================================================== */
 .case-view { display: none; }
 body.case-open main > section:not(.case-view) { display: none; }
@@ -158,13 +158,12 @@ body.case-open .case-view.is-open { display: block; }
 .cs-vpflow { grid-template-columns: 1fr auto 1fr; align-items: start; gap: 0 32px; }
 .cs-vpflow-item { display: flex; flex-direction: column; }
 .cs-vpflow .vp-tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral); margin: 0 0 14px; }
-.cs-vpflow .frame.vp-bare { border: none; background: none; height: auto; display: flex; align-items: center; justify-content: center; }
-.cs-vpflow .frame.vp-bare img { width: 100%; height: 100%; object-fit: contain; }
+.cs-vpflow .frame.vp-bare { border: none !important; background: none !important; height: 480px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.cs-vpflow .frame.vp-bare img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .cs-vpflow .vp-arrow { align-self: center; color: var(--coral); font-size: 34px; line-height: 1; padding-top: 22px; }
-/* second flow (RoofUmbrella concept -> card-sorting exercise): extra top margin
-   to separate from the figures above, taller frames for the detailed art */
 .cs-vpflow--gap { margin-top: 52px; }
 .cs-vpflow--gap .frame.vp-bare { height: 460px; }
+.cs-fig--selected .frame.vp-bare { border: 2px solid var(--coral) !important; }
 @media (max-width: 760px) {
   .cs-vpflow { grid-template-columns: 1fr; gap: 10px; }
   .cs-vpflow .frame.vp-bare { height: auto; }
@@ -194,7 +193,7 @@ body.case-open .case-view.is-open { display: block; }
 .cs-figrow--mini { max-width: 540px; margin-inline: auto; gap: 16px; }
 /* narrow pair: medium, centered, bottom-aligned, natural aspect (no letterbox) */
 .cs-figrow--narrow { max-width: 860px; margin-inline: auto; align-items: end; }
-/* trio: three mixed-aspect figures sharing one height (cols ∝ aspect), no crop/letterbox */
+/* trio: three mixed-aspect figures sharing one height (cols âˆ aspect), no crop/letterbox */
 .cs-figrow--trio { grid-template-columns: 1.79fr 1.39fr 1.03fr; align-items: end; gap: 24px; }
 /* aligned pair: equal columns, bottoms + captions level, no upscaling of the low-res photo */
 .cs-figrow--pair { grid-template-columns: 1fr 1fr; align-items: end; gap: 24px; max-width: 580px; margin-inline: auto; }
@@ -202,7 +201,7 @@ body.case-open .case-view.is-open { display: block; }
 .cs-fig--grow { width: min(580px, 100%); align-self: center; margin-inline: auto; }
 .cs-fig--grow .frame { background: none; }
 /* selected concept highlight */
-.cs-fig--selected .frame { border: 2px solid var(--coral); position: relative; }
+.cs-fig--selected .frame { border: 2px solid var(--coral) !important; position: relative; }
 .cs-fig--selected .sel-tag {
   position: absolute; top: 10px; left: 10px; z-index: 2;
   font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.1em;
@@ -215,7 +214,7 @@ body.case-open .case-view.is-open { display: block; }
 
 /* ---- image-slot figures (Project 02) ---- */
 .cs-slot { display: block; width: 100%; }
-/* uniform, aligned chart grid — every cell identical 16:9, image contained */
+/* uniform, aligned chart grid â€” every cell identical 16:9, image contained */
 .cs-figrow--chart { align-items: stretch; }
 .cs-figrow--chart .cs-fig { display: flex; flex-direction: column; }
 .cs-figrow--chart .cs-fig .frame { aspect-ratio: 16 / 9; background: none; }
@@ -252,7 +251,7 @@ body.case-open .case-view.is-open { display: block; }
 .cs-video {
   margin-top: 34px; position: relative; aspect-ratio: 16 / 9; width: 100%;
   background: none; display: flex; align-items: center; justify-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 .cs-video video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cs-video .slot {
@@ -272,7 +271,7 @@ body.case-open .case-view.is-open { display: block; }
 }
 .cs-video .slot .s { font-family: var(--grotesk); font-size: 14px; color: var(--mut); max-width: 360px; }
 
-/* ---- work card → case link ---- */
+/* ---- work card â†’ case link ---- */
 .proj--link { cursor: pointer; transition: transform .2s ease; }
 .proj--link:hover { transform: translateY(-2px); }
 .proj--link:focus-visible { outline: 2px solid var(--coral); outline-offset: 8px; }
